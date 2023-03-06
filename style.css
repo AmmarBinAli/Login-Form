@@ -52,7 +52,7 @@ h1{
 }
 .forms input[type="password"]{
     border-radius:4px;
-    box-shadow: 7px 7px 60px 10px rgb(143, 11, 61);
+    box-shadow: 7px 7px 60px 10px rgb(155, 6, 63);
 
 }
 .forms input[type="submit"]{
@@ -85,7 +85,7 @@ h1{
     position: absolute;
     left: 100px;
     top: -70px;
-    background: linear-gradient(rgb(255, 5, 201),rgb(179, 0, 255));
+    background: linear-gradient(rgb(255, 5, 201),rgb(99, 0, 145));
     background-size: 400%;
     width: 200px;
     height:140%;
