@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/back.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+  
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 60px 10px #2e061a;
+    overflow: hidden;
+    z-index: 10;
+
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 32px;
+    color: #f8d0e4;
+}
+.forms input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: black;
+    z-index: 999;
+    border: none;
+    outline: none;
+    margin: 15px 0px;
+}
+.forms input[type="text"]{
+    border-radius: 4px;
+    box-shadow: 7px 7px 60px 10px rgb(143, 11, 61);
+}
+.forms input[type="password"]{
+    border-radius:4px;
+    box-shadow: 7px 7px 60px 10px rgb(143, 11, 61);
+
+}
+.forms input[type="submit"]{
+    background: #ff0080;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-size: 20px;
+    transition: opacity .3s ease;
+    border-radius: 20px;
+}
+.forms input[type="submit"]:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.forgot{
+    text-align: center;
+}
+.forgot a{
+    text-decoration: none;
+    opacity: .6;
+    transition: opacity .3s ease;
+}
+.forgot a:hover{
+    opacity: 1;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    left: 100px;
+    top: -70px;
+    background: linear-gradient(rgb(255, 5, 201),rgb(179, 0, 255));
+    background-size: 400%;
+    width: 200px;
+    height:140%;
+    z-index: -2;
+    animation: animate 4s linear infinite;
+    border-radius: 20px;
+
+}
+.container::after{
+    content: "";
+    position: absolute;
+    inset: 4px;
+    z-index: -1;
+    border-radius: 16px;
+    background: black;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
